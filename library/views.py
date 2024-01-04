@@ -98,7 +98,7 @@ def issue(request):
         issue_item.save()
         book.update(quantity=book[0].quantity - 1)
 
-        messages.success(request, "Book issued successfully.")  # show success message and
+        messages.success(request, "完了しました")  # show success message and
                                                                 # redirect to issue page
     my_items = IssuedItem.objects.filter(  # get all books which are not issued to user
             user_id=request.user,

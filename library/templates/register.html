@@ -2,7 +2,7 @@
 {% block content %}
 <br>
 <center>
-   <h1 class="display-5">Register To Library</h1>
+   <h1 class="display-5">登録</h1>
 </center>
 <br><br>
 <div class="container border border-dark p-3 mt-10" style="width: 550px">
@@ -14,41 +14,41 @@
    <form action="{% url 'register' %}" method="POST">
        {% csrf_token %}
        <div class="form-group">
-           <label><b>First Name</b></label>
-           <input type="text" name="first_name" class="form-control" placeholder="First Name">
+           <label><b>名前</b></label>
+           <input type="text" name="first_name" class="form-control" placeholder="名前">
        </div>
        <br>
        <div class="form-group">
-           <label><b>Last Name</b></label>
-           <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+           <label><b>姓</b></label>
+           <input type="text" name="last_name" class="form-control" placeholder="姓">
        </div>
        <br>
        <div class="form-group">
-           <label><b>Username</b></label>
-           <input type="text" name="username" class="form-control" placeholder="Username">
+           <label><b>ユーザー名</b></label>
+           <input type="text" name="username" class="form-control" placeholder="ユーザー名">
        </div>
        <br>
        <div class="form-group">
-           <label><b>Email</b></label>
-           <input type="email" name="email" class="form-control" placeholder="Email">
+           <label><b>Eメール</b></label>
+           <input type="email" name="email" class="form-control" placeholder="Eメール">
        </div>
        <br>
        <div class="form-group">
-           <label><b>Password</b></label>
-           <input type="password" name="password1" class="form-control" placeholder="Password">
+           <label><b>パスワード</b></label>
+           <input type="password" name="password1" class="form-control" placeholder="パスワード">
        </div>
        <br>
        <div class="form-group">
-           <label><b>Confirm Password</b></label>
-           <input type="password" name="password2" class="form-control" placeholder="Confirm Password">
+           <label><b>確認用パスワード</b></label>
+           <input type="password" name="password2" class="form-control" placeholder="確認用パスワード">
        </div>
        <br>
        <center>
-           <button type="submit" class="btn btn-primary">Register</button>
+           <button type="submit" class="btn btn-primary">登録</button>
        </center>
        <br>
        <center>
-           <a href="login">already a user</a>
+           <a href="/login">ログイン</a>
        </center>
    </form>
 </div>

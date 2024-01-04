@@ -13,7 +13,7 @@
      id="search"
      type="search"
      class="form-control rounded"
-     placeholder="Search Book"
+     placeholder="本を探す"
      aria-label="Search"
      aria-describedby="search-addon"
    />
@@ -26,7 +26,6 @@
      <tr>
        <th class="" scope="col">書籍名</th>
        <th class="" scope="col">著者名</th>
-       <th class="" scope="col">表題</th>
        <th class="" scope="col">貸出</th>
      </tr>
    </thead>
@@ -35,7 +34,6 @@
      <tr>
        <td>{{book.book_name}}</td>
        <td>{{book.author_name}}</td>
-       <td>{{book.subject}}</td>
        <td>
          <center>
            <form action="issue" method="post">

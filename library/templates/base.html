@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
    <meta charset="UTF-8">
@@ -34,23 +34,23 @@
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                    {% if not user.is_authenticated %}
                    <li class="nav-item">
-                       <a class="nav-link" href="login">ログイン</a>
+                       <a class="nav-link" href="/login">ログイン</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="register">登録</a>
+                       <a class="nav-link" href="/register">登録</a>
                    </li>
                    {% else %}
                    <li class="nav-item">
                        <a class="nav-link" href="/">ホーム</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="issue">貸出</a>
+                       <a class="nav-link" href="/issue">貸出</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="return_item">返却</a>
+                       <a class="nav-link" href="/return_item">返却</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="history">貸出履歴</a>
+                       <a class="nav-link" href="/history">貸出履歴</a>
                    </li>
                    <li class="nav-item">
                        <a class="nav-link" href="logout">ログアウト</a>

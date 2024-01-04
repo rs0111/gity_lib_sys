@@ -2,31 +2,32 @@
 {% block content %}
 <br>
 <center>
-   <h1 class="display-5">Login To Library</h1>
+  <h1 class="display-5">ログイン</h1>
 </center>
-<br><br>
+<br>
+<br>
 <div class="container border border-dark p-3 mt-10" style="width: 550px">
    <form action="{% url 'login' %}" method="POST">
        {% csrf_token %}
        <div class="form-group">
-           <label><b>Username</b></label>
-           <input type="text" name="username" class="form-control" placeholder="Username">
+           <label><b>ユーザー名</b></label>
+           <input type="text" name="username" class="form-control" placeholder="ユーザー名">
        </div>
        <br>
        <div class="form-group">
-           <label><b>Password</b></label>
-           <input type="password" name="password" class="form-control" placeholder="Password">
+           <label><b>パスワード</b></label>
+           <input type="password" name="password" class="form-control" placeholder="パスワード">
        </div>
        <br>
        <center>
-           <button type="submit" class="btn btn-primary">Login</button>  
+           <button type="submit" class="btn btn-primary">ログイン</button>
        </center>
        <br>
        <center>
-           <a href="register">don't have account</a>
+           <a href="register">アカウントを作る</a>
        </center>
        <center>
-           <a href="admin">Login as admin</a>
+           <a href="admin">管理者としてログイン</a>
        </center>
    </form>
    <br>

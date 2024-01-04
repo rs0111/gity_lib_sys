@@ -8,10 +8,10 @@ from django.utils import timezone
 
 # model to store book details
 class Book(models.Model):
-    book_name = models.CharField(max_length=100)
+    # isbn = models.IntegerField
+    book_name = models.CharField(max_length=150)
     author_name = models.CharField(max_length=150)
     quantity = models.IntegerField(default=1)
-    subject = models.CharField(max_length=1000)
     book_add_time = models.TimeField(default=timezone.now())
     book_add_date = models.DateField(default=date.today())
 
